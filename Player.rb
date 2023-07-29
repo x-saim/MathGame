@@ -20,9 +20,3 @@ class Player
 end
 
 player1 = Player.new("Player 1", 3)
-
-p player1
-
-player1.lose_life
-
-puts player1.is_alive

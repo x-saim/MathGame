@@ -3,3 +3,7 @@
 
 require './MathGame.rb'
 require './Player.rb'
+
+
+game = MathGame.new
+game.start_game
