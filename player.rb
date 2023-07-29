@@ -1,5 +1,21 @@
 # frozen_string_literal: true
 
+# Player - Represents a player in the math game.
+#
+# This class encapsulates player-related information and functionalities
+# for the math game. Each player is initialized with a name and a specific
+# number of lives. Players can lose lives, and their status (alive or not)
+# can be checked through the `alive?` method.
+#
+# Example usage:
+# ```
+# player1 = Player.new("Alice", 3)
+# player2 = Player.new("Bob", 3)
+# player1.lose_life
+# puts "#{player1.name} has #{player1.lives} lives left."
+# puts "#{player2.name} is #{player2.alive? ? 'alive' : 'out of lives'}."
+# ```
+
 class Player
   attr_reader :name, :lives
 

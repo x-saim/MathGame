@@ -1,5 +1,27 @@
 # frozen_string_literal: true
 
+# MathGame - 2-Player Command Line Application
+#
+# A simple math game where two players take turns answering addition questions.
+# Each player starts with 3 lives and loses a life for each wrong answer.
+# The game continues until one of the players runs out of lives.
+# The winner is determined based on the remaining lives of both players.
+# The game is played through the command line interface.
+#
+# Usage:
+# 1. Instantiate a MathGame object and call the `start_game` method to begin the game.
+# 2. Players will be prompted to enter their names before the game starts.
+# 3. Each turn, a random addition question is generated, and the current player must answer it correctly.
+# 4. If the answer is correct, the player proceeds to the next turn. Otherwise, the player loses a life.
+# 5. The game ends when one of the players loses all their lives.
+# 6. The game displays the final winner and the score of the other player.
+#
+# Example:
+# ```
+# game = MathGame.new
+# game.start_game
+# ```
+
 class MathGame
   # Starts the math game by prompting for player names, creating players,
   # setting the initial current player, and entering the game loop.
