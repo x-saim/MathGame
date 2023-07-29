@@ -1,8 +1,5 @@
-# This is the main entrypoint into the program
-
-require './MathGame.rb'
-require './Player.rb'
-
+require './math_game'
+require './player'
 
 game = MathGame.new
 game.start_game
