@@ -26,8 +26,8 @@ class MathGame
   # checks if the answer is correct, updates player lives accordingly, switches to the other player,
   # and displays the remaining lives of both players.
   def generate_question
-    random_num1 = rand(1..10)
-    random_num2 = rand(1..10)
+    random_num1 = rand(1..20)
+    random_num2 = rand(1..20)
     answer = random_num1 + random_num2
 
     puts "#{@current_player.name}: What does #{random_num1} + #{random_num2} equal to?"
