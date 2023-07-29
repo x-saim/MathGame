@@ -42,6 +42,7 @@ class MathGame
     
     switch_players
     puts "P1: #{@player1.lives}/3 vs. P2: #{@player2.lives}/3"
+    
   end
 
 # Switches the current player to the other player.
@@ -60,6 +61,7 @@ class MathGame
   # Displays the winner at the end of the game.
   def game_loop
     while @player1.is_alive && @player2.is_alive
+      puts "----- NEW TURN -----"
       generate_question
     end
 
