@@ -1,5 +1,4 @@
 class MathGame
- #@@current_player = "unknown"
 
   def start_game
     puts "Welcome to the Math Game"
@@ -42,12 +41,17 @@ class MathGame
     @current_player = (@current_player == @player1) ? @player2 : @player1
   end
 
+  def winner
+    winner = (@player1.lives > @player2.lives) ? @player1.name : @player2.name
+  end
+
   def game_loop
     while @player1.is_alive && @player2.is_alive
       generate_question
     end
 
     puts "Game Over!"
+    puts "The winner is: #{winner}"
   end
 
 end

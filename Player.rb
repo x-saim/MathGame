@@ -18,5 +18,3 @@ class Player
       @lives > 0
     end
 end
-
-player1 = Player.new("Player 1", 3)
